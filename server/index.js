@@ -8,7 +8,7 @@ app.use(cors());
 
 mongoose
     .connect(
-        "mongodb+srv://amrit_27:vkgVaqw6oQ8Rb1vg@cluster0.ip7otsp.mongodb.net/NGOs?retryWrites=true&w=majority&appName=Cluster0"
+        process.env.MONGODB_URI
     )
     .then(() => {
         console.log("Connected to MongoDB Atlas");
