@@ -20,7 +20,7 @@ const Dashboard = () => {
         }
 
         try {
-            const response = await axios.get(`http://localhost:3001/dashboard`, {
+            const response = await axios.get(`https://we-do-good-assignment.vercel.app/dashboard`, {
                 params: { month }
             });
             console.log(response);

@@ -44,7 +44,8 @@ const Navbar = () => {
   function handleSubmit(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/report", { ngoId, peopleHelped, eventsConducted, fundsUtilized, month })
+      // .post("http://localhost:3001/report", { ngoId, peopleHelped, eventsConducted, fundsUtilized, month })
+      .post("https://we-do-good-assignment.vercel.app/report", { ngoId, peopleHelped, eventsConducted, fundsUtilized, month })
       .then((result) => {
         console.log('ho gya bhai ho gya', result);
         navigate("/success");
